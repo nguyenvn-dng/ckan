@@ -6,7 +6,7 @@
 # Translators:
 # Adrià Mercader <amercadero@gmail.com>, 2024
 # 
-#, fuzzy
+
 msgid ""
 msgstr ""
 "Project-Id-Version: ckan 2.11.0b0\n"
@@ -275,7 +275,7 @@ msgstr "Không tìm thấy"
 #: ckan/templates/package/collaborators/collaborators.html:19
 #: ckanext/stats/templates/ckanext/stats/index.html:142
 msgid "User"
-msgstr "Người sử dụng"
+msgstr "Người dùng"
 
 #: ckan/logic/converters.py:168 ckan/logic/validators.py:197
 #: ckan/logic/validators.py:305 ckan/templates/package/read_base.html:22
@@ -1908,7 +1908,7 @@ msgstr "Lưu nhóm"
 #: ckanext/example_theme_docs/v11_HTML_and_CSS/templates/snippets/example_theme_most_popular_groups.html:22
 msgid "{num} Dataset"
 msgid_plural "{num} Datasets"
-msgstr[0] "{num}  Bộ dữ liệu"
+msgstr[0] "{num} Bộ dữ liệu"
 
 #: ckan/templates/group/snippets/group_item.html:34
 #: ckan/templates/organization/snippets/organization_item.html:33
@@ -1921,12 +1921,12 @@ msgstr "0 Bộ dữ liệu"
 #: ckan/templates/organization/snippets/organization_item.html:38
 msgid "{num} Member"
 msgid_plural "{num} Members"
-msgstr[0] ""
+msgstr[0] "{num} Thành viên"
 
 #: ckan/templates/group/snippets/group_item.html:41
 #: ckan/templates/organization/snippets/organization_item.html:40
 msgid "0 Members"
-msgstr ""
+msgstr "0 Thành viên"
 
 #: ckan/templates/group/snippets/group_item.html:50
 #: ckan/templates/group/snippets/group_item.html:51
@@ -1948,10 +1948,10 @@ msgid ""
 "particular theme, or as a very simple way to help people find and search "
 "your own published datasets."
 msgstr ""
-"Bạn có thể dùng CKAN Groups để tạo và quản lý các bộ sưu tập của các tập dữ "
-"liệu. Điều này có thể cho tập dữ liệu cho một dự án hoặc nhóm cụ thể, hoặc "
-"trên một chủ để cụ thể, hoặc là rất đợn giản để giúp mọi người tìm và tìm "
-"kiếm tập dữ liệu được phổ biến của chính họ."
+"Bạn có thể sử dụng Nhóm để tạo và quản lý các bộ sưu tập của các tập dữ "
+"liệu. Việc này có thể dùng để lập danh mục dữ liệu cho một dự án hoặc nhóm cụ thể, hoặc "
+"theo một chủ để cụ thể, hoặc như một cách rất đơn giản để giúp mọi người tìm "
+"kiếm và tra cứu các dữ liệu đã xuất bản của riêng bạn."
 
 #: ckan/templates/group/snippets/info.html:19
 #: ckan/templates/organization/bulk_process.html:85
@@ -1995,7 +1995,7 @@ msgstr ""
 
 #: ckan/templates/home/snippets/promoted.html:8
 msgid "Welcome to CKAN"
-msgstr "Chào mừng gia nhập CKAN"
+msgstr "Chào mừng gia nhập Nền tảng dữ liệu mở VOP"
 
 #: ckan/templates/home/snippets/promoted.html:10
 msgid ""
@@ -2011,11 +2011,11 @@ msgstr "Đây là khu vực mô tả"
 
 #: ckan/templates/home/snippets/search.html:2
 msgid "E.g. environment"
-msgstr ""
+msgstr "V.d. môi trường, đất đai, ..."
 
 #: ckan/templates/home/snippets/search.html:7
 msgid "Search data"
-msgstr ""
+msgstr "Tìm kiếm dữ liệu"
 
 #: ckan/templates/home/snippets/search.html:9
 msgid "Search datasets"
@@ -2028,7 +2028,7 @@ msgstr "Các thẻ phổ biến"
 #: ckan/templates/macros/form/checkbox.html:28
 #: ckan/templates/macros/form/input_block.html:25
 msgid "This field is required"
-msgstr "Lĩnh vực được yêu cầu"
+msgstr "Trường này là bắt buộc"
 
 #: ckan/templates/macros/form/custom.html:42
 msgid "Key"
@@ -2072,7 +2072,7 @@ msgstr ""
 
 #: ckan/templates/macros/form/required_message.html:11
 msgid "Required field"
-msgstr "Lĩnh vực được yêu cầu"
+msgstr "Trường bắt buộc"
 
 #: ckan/templates/organization/base_form_page.html:5
 msgid "Organization Form"
@@ -2143,7 +2143,7 @@ msgstr "Hiện tại không có tổ chức nào cho trang web này"
 #: ckan/templates/organization/members.html:10
 msgid "{count} member"
 msgid_plural "{count} members"
-msgstr[0] ""
+msgstr[0] "{count} thành viên"
 
 #: ckan/templates/organization/member_new.html:34
 #: ckan/templates/package/collaborators/collaborator_new.html:32
@@ -2204,9 +2204,9 @@ msgid ""
 "datasets. Users can have different roles within an Organization, depending "
 "on their level of authorisation to create, edit and publish."
 msgstr ""
-"Các tổ chức CKAN được dùng để lập ra, quản lý và công bố các bộ dữ liệu. "
-"Người dùng có thể có nhiều vai trò trong một Tổ chức, tùy thuộc vào cấp độ "
-"quyền của họ trong việc tạo ra, chỉnh sửa và đưa tin."
+"Tổ chức trong Cổng dữ liệu mở được dùng để tạo, quản lý và xuất bản các bộ dữ liệu. "
+"Người dùng có thể có các vai trò khác nhau trong một Tổ chức, tùy thuộc vào cấp độ "
+"ủy quyền của họ trong việc tạo, chỉnh sửa và xuất bản."
 
 #: ckan/templates/organization/snippets/info.html:41
 msgid "There is no description for this organization"
@@ -2604,7 +2604,7 @@ msgstr "Tình trạng"
 
 #: ckan/templates/package/snippets/additional_info.html:66
 msgid "Last Updated"
-msgstr ""
+msgstr "Cập nhật lần cuối"
 
 #: ckan/templates/package/snippets/cannot_create_package.html:10
 msgid "Before you can create a dataset you need to create an organization."
@@ -2949,7 +2949,7 @@ msgstr "Bộ dữ liệu này đáp ứng Định nghĩa Mở"
 
 #: ckan/templates/snippets/package_item.html:48
 msgid "There is no description for this dataset"
-msgstr ""
+msgstr "Không có mô tả nào cho tập dữ liệu này"
 
 #: ckan/templates/snippets/search_form.html:33
 #: ckan/templates/snippets/simple_search.html:8
@@ -2991,7 +2991,7 @@ msgstr "Không tìm thấy bộ dữ liệu"
 #: ckan/templates/snippets/search_result_text.html:21
 msgid "{number} group found for \"{query}\""
 msgid_plural "{number} groups found for \"{query}\""
-msgstr[0] "{number} số nhóm tìm thấy cho \"{query}\""
+msgstr[0] "{number} nhóm được tìm thấy cho \"{query}\""
 
 #: ckan/templates/snippets/search_result_text.html:22
 msgid "No groups found for \"{query}\""
@@ -3000,7 +3000,7 @@ msgstr "Không tìm thấy nhóm cho \"{query}\""
 #: ckan/templates/snippets/search_result_text.html:23
 msgid "{number} group found"
 msgid_plural "{number} groups found"
-msgstr[0] "{number} số nhóm tìm thấy"
+msgstr[0] "{number} nhóm được tìm thấy"
 
 #: ckan/templates/snippets/search_result_text.html:24
 msgid "No groups found"
@@ -3009,7 +3009,7 @@ msgstr "Không tìm thấy nhóm"
 #: ckan/templates/snippets/search_result_text.html:27
 msgid "{number} organization found for \"{query}\""
 msgid_plural "{number} organizations found for \"{query}\""
-msgstr[0] "{number} số tổ chức tìm thấy cho \"{query}\""
+msgstr[0] "{number} tổ chức được tìm thấy cho \"{query}\""
 
 #: ckan/templates/snippets/search_result_text.html:28
 msgid "No organizations found for \"{query}\""
@@ -3018,7 +3018,7 @@ msgstr "Không tìm thấy tổ chức cho  \"{query}\""
 #: ckan/templates/snippets/search_result_text.html:29
 msgid "{number} organization found"
 msgid_plural "{number} organizations found"
-msgstr[0] "{number} số tổ chức tìm thấy"
+msgstr[0] "{number} tổ chức được tìm thấy"
 
 #: ckan/templates/snippets/search_result_text.html:30
 msgid "No organizations found"
@@ -3042,7 +3042,7 @@ msgstr "Đang tải"
 
 #: ckan/templates/user/api_tokens.html:20
 msgid "Create API Token"
-msgstr ""
+msgstr "Tạo API Token"
 
 #: ckan/templates/user/api_tokens.html:30
 #: ckan/templates/user/read_base.html:26
@@ -3051,7 +3051,7 @@ msgstr ""
 
 #: ckan/templates/user/api_tokens.html:38
 msgid "You haven't created any API Tokens."
-msgstr ""
+msgstr "Bạn chưa tạo bất kỳ API Token nào."
 
 #: ckan/templates/user/confirm_delete.html:11
 msgid "Are you sure you want to delete user - {name}?"
@@ -3087,12 +3087,12 @@ msgstr "Tạo bộ dữ liệu ngay bây giờ?"
 #: ckan/templates/user/dashboard_groups.html:22
 #: ckan/templates/user/read_groups.html:14
 msgid "You are not a member of any groups."
-msgstr "Bạn không là thành  viên nhóm nào"
+msgstr "Bạn không là thành viên của bất kỳ nhóm nào"
 
 #: ckan/templates/user/dashboard_organizations.html:22
 #: ckan/templates/user/read_organizations.html:14
 msgid "You are not a member of any organizations."
-msgstr "Bạn không là thành viên của tổ chức nào"
+msgstr "Bạn không là thành viên của bất kỳ tổ chức nào"
 
 #: ckan/templates/user/edit.html:6 ckan/templates/user/edit_base.html:3
 #: ckan/templates/user/list.html:6 ckan/templates/user/list.html:13
@@ -3263,11 +3263,11 @@ msgstr "Bạn đã đăng nhập"
 
 #: ckan/templates/user/logout_first.html:22
 msgid "You need to log out before you can log in with another account."
-msgstr "Bạn cần thoát trước khi đăng nhập vào một tài khảo khác"
+msgstr "Bạn cần đăng xuất trước khi đăng nhập vào một tài khoản khác"
 
 #: ckan/templates/user/logout_first.html:23
 msgid "Log out now"
-msgstr "Thoát ngay bây giờ"
+msgstr "Đăng xuất ngay bây giờ"
 
 #: ckan/templates/user/new.html:6
 msgid "Registration"
@@ -3287,7 +3287,7 @@ msgstr "Tạo bộ dữ liệu, nhóm và các hoạt động thú vị khác"
 
 #: ckan/templates/user/new_user_form.html:10
 msgid "username"
-msgstr ""
+msgstr "Tên đăng nhập"
 
 #: ckan/templates/user/new_user_form.html:11
 msgid "Full Name"
@@ -3326,24 +3326,24 @@ msgstr "Nhập mật khẩu mới và chúng tôi sẽ cập nhật tài khoản
 
 #: ckan/templates/user/read.html:27
 msgid "User hasn't created any datasets."
-msgstr "Người sử dụng không tạo bộ dữ liệu nào"
+msgstr "Người dùng chưa tạo bộ dữ liệu nào"
 
 #: ckan/templates/user/read_groups.html:16
 msgid "User isn't a member of any groups."
-msgstr ""
+msgstr "Người dùng không phải là thành viên của bất kỳ nhóm nào."
 
 #: ckan/templates/user/read_organizations.html:16
 msgid "User isn't a member of any organizations."
-msgstr ""
+msgstr "Người dùng không phải là thành viên của bất kỳ tổ chức nào."
 
 #: ckan/templates/user/request_reset.html:3
 #: ckan/templates/user/request_reset.html:13
 msgid "Reset your password"
-msgstr "Cài đặt lại mật khẩu của bạn"
+msgstr "Đặt lại mật khẩu của bạn"
 
 #: ckan/templates/user/request_reset.html:18
 msgid "Email or username"
-msgstr ""
+msgstr "Email hoặc tên đăng nhập"
 
 #: ckan/templates/user/request_reset.html:28
 msgid "Request Reset"
@@ -3406,7 +3406,7 @@ msgstr ""
 
 #: ckan/templates/user/snippets/login_form.html:21
 msgid "Username or Email"
-msgstr ""
+msgstr "Tên tài khoản / Email"
 
 #: ckan/templates/user/snippets/user_search.html:5
 msgid "Search Users"
@@ -3608,7 +3608,7 @@ msgstr "Không được xóa thành viên %s nhóm"
 
 #: ckan/views/group.py:662
 msgid "Group member has been deleted."
-msgstr "Thành viên nhóm bị xóa"
+msgstr "Thành viên nhóm đã bị xóa"
 
 #: ckan/views/group.py:773 ckan/views/user.py:919
 #, python-format
@@ -3657,7 +3657,7 @@ msgstr ""
 #: ckan/views/group.py:1233
 #, python-format
 msgid "Unauthorized to add member to group %s"
-msgstr "Không được phép thêm thành viên nhóm %s"
+msgstr "Không được phép thêm thành viên vào nhóm %s"
 
 #: ckan/views/home.py:70
 #, python-format
@@ -5483,3 +5483,4 @@ msgstr ""
 #: ckanext/webpageview/theme/templates/webpage_form.html:3
 msgid "eg. http://example.com  (if blank uses resource url)"
 msgstr ""
+
