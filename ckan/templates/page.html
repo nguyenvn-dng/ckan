@@ -150,7 +150,8 @@ header.html file. #} {%- block header %} {% include "header.html" %} {% endblock
       class="card-wrap{% block wrapper_class %}{% endblock %}{% if self.secondary()|trim == '' or c.action=='resource_read' %} no-nav{% endif %}">
       {# The pre_primary block can be used to add content to before the
       rendering of the main content columns of the page. #} {% block pre_primary
-      %} {% endblock %} {% block secondary %}
+      %} {% endblock %} 
+      <!-- {% block secondary %}
       <aside class="secondary col-md-3">
         {# The secondary_content block can be used to add content to the sidebar
         of the page. This is the main block that is likely to be used within a
@@ -159,8 +160,9 @@ header.html file. #} {%- block header %} {% include "header.html" %} {% endblock
         <p>Some content for the item</p>
         {% endblock %} #} {% block secondary_content %}{% endblock %}
       </aside>
-      {% endblock %} {% block primary %}
-      <div class="primary col-md-9 col-xs-12" role="main">
+      {% endblock %}  -->
+      {% block primary %}
+      <div class="primary col-md-12 col-xs-12" role="main">
         {# The primary_content block can be used to add content to the page.
         This is the main block that is likely to be used within a template.
         Example: {% block primary_content %}
