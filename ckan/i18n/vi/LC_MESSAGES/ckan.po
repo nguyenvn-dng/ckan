@@ -1137,7 +1137,7 @@ msgstr "Tệp"
 #: ckan/public/base/javascript/modules/resource-reorder.js:41
 #: ckan/templates/package/edit_base.html:18
 msgid "Reorder resources"
-msgstr ""
+msgstr "Sắp xếp lại tài nguyên"
 
 #: ckan/public/base/javascript/modules/resource-reorder.js:42
 msgid ""
@@ -1167,7 +1167,7 @@ msgstr ""
 
 #: ckan/public/base/javascript/modules/resource-view-reorder.js:40
 msgid "Reorder resource view"
-msgstr ""
+msgstr "Sắp xếp lại chế độ xem tài nguyên"
 
 #: ckan/public/base/javascript/modules/slug-preview.js:57
 #: ckan/templates/group/edit_base.html:13
@@ -1599,6 +1599,12 @@ msgid ""
 "password at: %(reset_link)s Have a nice day. -- Message sent by "
 "%(site_title)s (%(site_url)s)"
 msgstr ""
+"Thân gửi %(user_name)s, Bạn đã được mời tham gia %(site_title)s. Một tài khoản người dùng "
+"đã được tạo cho bạn với tên %(user_name)s. Bạn có thể thay đổi"
+" tên tài khoản sau khi đăng nhập hệ thống thành công. Bạn đã được thêm vào %(group_type)s %(group_title)s với "
+"vai trò sau: %(role_name)s. Để chấp nhận lời mời này, vui lòng đặt lại "
+"mật khẩu tại địa chỉ: %(reset_link)s Chúc bạn một ngày tốt lành. -- Tin nhắn được gửi bởi "
+"%(site_title)s (%(site_url)s)"
 
 #: ckan/templates/emails/invite_user_subject.txt:1
 #, python-format
@@ -2597,7 +2603,7 @@ msgstr "Tác giả"
 #: ckan/templates/package/snippets/additional_info.html:46
 #: ckan/templates/package/snippets/package_metadata_fields.html:20
 msgid "Maintainer"
-msgstr "Người bảo dưỡng"
+msgstr "Người vận hành / bảo trì"
 
 #: ckan/templates/package/snippets/additional_info.html:53
 #: ckan/templates/package/snippets/package_metadata_fields.html:10
@@ -2655,7 +2661,7 @@ msgstr "Ví dụ: kinh tế, sức khỏe tinh thần, chính phủ"
 
 #: ckan/templates/package/snippets/package_basic_fields.html:36
 msgid "Please select the license"
-msgstr ""
+msgstr "Vui lòng chọn giấy phép"
 
 #: ckan/templates/package/snippets/package_basic_fields.html:45
 msgid ""
@@ -2693,6 +2699,11 @@ msgid ""
 "under the <a href=\"http://opendatacommons.org/licenses/odbl/1-0/\">Open "
 "Database License</a>."
 msgstr ""
+"<i>Giấy phép dữ liệu</i> mà bạn chọn ở trên chỉ áp dụng cho nội dung của "
+"các tệp tài nguyên mà bạn thêm vào bộ dữ liệu này. Bằng việc gửi biểu mẫu "
+"này, bạn đồng ý phát hành các giá trị <i>siêu dữ liệu</i> mà bạn nhập vào "
+"biểu mẫu theo <a href=\"http://opendatacommons.org/licenses/odbl/1-0/\">Giấy "
+"phép Cơ sở dữ liệu Mở</a>."
 
 #: ckan/templates/package/snippets/package_form.html:42
 msgid "Are you sure you want to delete this dataset?"
@@ -2728,7 +2739,7 @@ msgstr "joe@example.com"
 
 #: ckan/templates/package/snippets/package_metadata_fields.html:22
 msgid "Maintainer Email"
-msgstr "Email người bảo dưỡng"
+msgstr "Email người bảo trì / vận hành"
 
 #: ckan/templates/package/snippets/resource_edit_form.html:12
 msgid "Update Resource"
@@ -2752,7 +2763,7 @@ msgstr "VD: CSV, XML hay JSON"
 
 #: ckan/templates/package/snippets/resource_form.html:48
 msgid "This will be guessed automatically. Leave blank if you wish"
-msgstr ""
+msgstr "Trường này sẽ được tự động điền. Để trống nếu bạn muốn."
 
 #: ckan/templates/package/snippets/resource_form.html:59
 msgid "eg. 2012-06-05"
@@ -2990,7 +3001,7 @@ msgstr "Không tìm thấy bộ dữ liệu cho \"{query}\""
 #: ckan/templates/snippets/search_result_text.html:17
 msgid "{number} dataset found"
 msgid_plural "{number} datasets found"
-msgstr[0] "{number} số bộ dữ liệu tìm thấy"
+msgstr[0] "{number} bộ dữ liệu được tìm thấy"
 
 #: ckan/templates/snippets/search_result_text.html:18
 msgid "No datasets found"
@@ -3514,7 +3525,7 @@ msgstr "Người dùng %r không được phép sửa %s"
 #: ckan/views/dataset.py:440 ckan/views/dataset.py:454
 #: ckan/views/dataset.py:915 ckan/views/dataset.py:942
 msgid "Dataset not found or you have no permission to view it"
-msgstr ""
+msgstr "Không tìm thấy tập dữ liệu hoặc bạn không có quyền xem nó"
 
 #: ckan/views/dataset.py:446 ckan/views/dataset.py:742
 #: ckan/views/dataset.py:983
@@ -3555,7 +3566,7 @@ msgstr "Không được phép xóa dữ liệu %s"
 
 #: ckan/views/dataset.py:879
 msgid "Dataset has been deleted."
-msgstr "Dữ liệu đã được xóa."
+msgstr "Bộ dữ liệu đã được xóa."
 
 #: ckan/views/dataset.py:1089
 msgid "Unauthorized to read collaborators {}"
