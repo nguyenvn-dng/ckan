@@ -1609,7 +1609,7 @@ msgstr ""
 #: ckan/templates/emails/invite_user_subject.txt:1
 #, python-format
 msgid "Invite for %(site_title)s"
-msgstr ""
+msgstr "Lời mời tham gia %(site_title)s"
 
 #: ckan/templates/emails/reset_password.txt:1
 #, python-format
