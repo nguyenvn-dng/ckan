@@ -6,3 +6,7 @@ main-rtl:
   filters: cssrewrite
   output: base/%(version)s_main-rtl.css
   contents: main-rtl.css
+custom:
+  filters: cssrewrite
+  output: base/%(version)s_custom.css
+  contents: css/custom.css
