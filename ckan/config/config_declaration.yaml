@@ -1070,8 +1070,8 @@ groups:
         editable: true
 
       - key: ckan.site_logo
-        default: /base/images/ckan-logo.png
-        example: /images/ckan_logo_fullname_long.png
+        default: /base/images/ioc-logo.svg
+        example: /images/ioc-logo.svg
         description: This sets the logo used in the title bar.
         editable: true
 
