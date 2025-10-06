@@ -1,5 +1,14 @@
 {% extends "user/edit_base.html" %}
 
+{% block styles %} 
+  {{ super() }}
+  <style>
+    .module-custome {
+      flex: 1
+    }
+  </style>
+{% endblock %}
+
 {% set user = current_user %}
 {% set org_type = h.default_group_type('organization') %}
 {% set group_type = h.default_group_type('group') %}
@@ -13,7 +22,7 @@
 {% block secondary %}{% endblock %}
 
 {% block primary %}
-  <article class="module">
+  <article class="module module-custome">
     {% block page_header %}
       <header class="module-content page-header hug">
         <div class="content_action">
