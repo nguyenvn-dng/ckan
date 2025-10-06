@@ -1,12 +1,24 @@
 {% extends "page.html" %}
 
+{% block styles %} 
+  {{ super() }}
+  <style>
+    .homepage-custom {
+      flex: 1;
+      margin-top: 70px;
+      padding: 20px 0;
+      background-color: #f4f7fa;
+    }
+  </style> 
+{% endblock %}
+
 {% block subtitle %}{{ _("Welcome") }}{% endblock %}
 
 {% block maintag %}{% endblock %}
 {% block toolbar %}{% endblock %}
 
 {% block content %}
-<div class="homepage">
+<div class="homepage homepage-custom">
   <div id="content" class="container">
     {{ self.flash() }}
   </div>
