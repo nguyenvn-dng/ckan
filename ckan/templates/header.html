@@ -30,12 +30,12 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    gap: 30px;
+    gap: 10px;
   }
 
   .account-search {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: 10px;
   }
@@ -56,6 +56,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .navbar-left-custom, .navbar-right-custom {
+    flex: 0 0 20%;
   }
 
   a:hover {
@@ -139,6 +143,7 @@
   .user-menu.active .user-dropdown {
     display: block;
   }
+
 </style>
 {% endblock %}
 
@@ -167,10 +172,10 @@
 
 <header class="main-header">
   <div class="main-container">
-    {% block header_debug %} {% if g.debug and not g.debug_supress_header %}
+    <!-- {% block header_debug %} {% if g.debug and not g.debug_supress_header %}
     <div class="debug">Blueprint : {{ g.blueprint }}<br />View : {{ g.view }}</div>
-    {% endif %} {% endblock %}
-    <nav class="navbar navbar-expand-lg navbar-light">
+    {% endif %} {% endblock %} -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-left-custom">
       <hgroup class="{{ g.header_class }} navbar-left">
 
         {% block header_logo %}
@@ -221,27 +226,27 @@
               fill="#0386F6" />
           </svg>
 
-          <span style="font-size: 1.3rem; font-weight: 500;">
+          <span style="font-size: 1.3rem; font-weight: 600;">
             IOC
           </span>
 
         </a>
 
-        {% else %}
+        <!-- {% else %}
         <h1>
           <a href="{{ h.url_for('home.index') }}">{{ g.site_title }}</a>
         </h1>
         {% if g.site_description %}
         <h2>{{ g.site_description }}</h2>
-        {% endif %}
+        {% endif %} -->
         {% endif %}
         {% endblock %}
 
       </hgroup>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation-toggle"
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation-toggle"
         aria-controls="main-navigation-toggle" aria-expanded="false" aria-label="{{ _('Toggle navigation') }}">
         <span class="fa fa-bars text-white"></span>
-      </button>
+      </button> -->
     </nav>
     <div class="main-nav">
       <!-- <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -307,7 +312,7 @@
         </li>
       </ul>
     </div>
-    <div class="account-search">
+    <div class="account-search navbar-right-custom">
       {% block header_account_container_content %}
       {% block header_site_search %}
       <form class="d-flex site-search" action="{% url_for dataset_type ~ '.search' %}" method="get">
