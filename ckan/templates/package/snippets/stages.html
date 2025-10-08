@@ -12,6 +12,135 @@ Example:
     {% snippet 'package/snippets/stages.html', stages=['active', 'complete'] %}
 
 #}
+
+{% block styles %}
+  <style>
+    .stages-custom {
+  margin: 0;
+  list-style: none;
+  color: #aeaeae;
+  counter-reset: stage;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+.stages-custom::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.stages-custom li {
+  line-height: 27px;
+  counter-increment: stage;
+  width: 50%;
+  background-color: #EDEDED;
+  float: left;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 0;
+}
+.stages-custom li::before {
+  border-radius: 14px;
+  content: counter(stage);
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  margin-right: 5px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  background-color: #aeaeae;
+  z-index: 1;
+}
+.stages-custom li::after {
+  left: 0;
+  border: solid rgba(237, 237, 237, 0);
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-top-color: #EDEDED;
+  border-bottom-color: #EDEDED;
+  border-width: 29px;
+  top: 50%;
+  margin-top: -29px;
+  margin-left: -30px;
+}
+
+.stages-custom li.last {
+  position: relative;
+  right: -1px;
+}
+
+.stages-custom li.last,
+.stages-custom li.last .highlight {
+  border-radius: 0 3px 0 0;
+}
+
+.stages-custom li.first:after {
+  content: none;
+  border: none;
+}
+
+.stages-custom li.active:after {
+  border-color: rgba(140, 198, 138, 0);
+  border-top-color: #0070CE;
+  border-bottom-color: #0070CE;
+}
+
+.stages-custom li.complete:after {
+  border-color: rgba(197, 226, 196, 0);
+  border-top-color: #D0E4FB;
+  border-bottom-color: #D0E4FB;
+}
+
+.stages-custom.stage-3 li.complete:first-child:after {
+  content: none;
+}
+
+.stages-custom li.active,
+.stages-custom li.complete {
+  background: none;
+}
+
+.stages-custom li.active:before {
+  color: #0070CE;
+  background: #ffffff;
+}
+
+.stages-custom li.complete:before {
+  color: #000000;
+  background: #ffffff;
+}
+
+.stages-custom li .highlight {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 52px;
+  border: none;
+  text-align: left;
+  text-decoration: none;
+  line-height: 27px;
+  z-index: -1;
+}
+
+.stages-custom li.active .highlight {
+  color: #fff;
+  background: #0070CE;
+}
+
+.stages-custom li.complete .highlight {
+  color: #000;
+  background: #D0E4FB;
+}
+  </style>
+{% endblock %}
 {% set s1 = stages[0] or 'active' %}
 {% set s2 = stages[1] or 'uncomplete' %}
 {% set dataset_type = dataset_type or h.default_package_type() %}
@@ -19,7 +148,7 @@ Example:
 {% if s1 != 'uncomplete' %}{% set class = 'stage-1' %}{% endif %}
 {% if s2 != 'uncomplete' %}{% set class = 'stage-2' %}{% endif %}
 
-<ol class="stages {{ class }}">
+<ol class="stages-custom {{ class }}">
   <li class="first {{ s1 }}">
     {% if s1 != 'complete' %}
       <span class="highlight">{{ h.humanize_entity_type('package', dataset_type, 'create label') or _('Create Dataset') }}</span>
