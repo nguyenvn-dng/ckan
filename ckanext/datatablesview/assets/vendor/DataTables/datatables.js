@@ -15652,7 +15652,7 @@ $.extend( true, DataTable.defaults, {
 /* Default class modification */
 $.extend( DataTable.ext.classes, {
 	sWrapper:      "dataTables_wrapper dt-bootstrap5",
-	sFilterInput:  "form-control form-control-sm",
+	sFilterInput:  "form-control form-control-custom form-control-sm",
 	sLengthSelect: "form-select form-select-sm",
 	sProcessing:   "dataTables_processing card",
 	sPageButton:   "paginate_button page-item"

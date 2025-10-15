@@ -12,7 +12,7 @@
 
 <div id="followee-filter" class="pull-right">
   <div class="dropdown">
-    <a href="#" id="followee-popover" class="btn btn-default dropdown-toggle"
+    <a href="#" id="followee-popover" class="btn btn-default btn-default-custome dropdown-toggle"
       title="{{ _('Activity from:') }} {{ context.context }}">
       <span>{{ _('Activity from:') }}</span> <strong>{{ context.context }}</strong> <span class="caret"></span>
     </a>
@@ -20,9 +20,9 @@
 
   <form id="followee-content" action="/dashboard" style=" display:none;">
     <div class="popover-header">
-      <div class="input-group">
-        <span class="input-group-text"><i class="fa fa-search"></i></span>
-        <input type="text" class="form-control" name="q" placeholder="{{ _('Search list...') }}" value="{{context.q}}"
+      <div class="input-group input-group-custom">
+        <span class="input-group-text-custom"><i class="fa fa-search"></i></span>
+        <input type="text" class="form-control form-control-custom" name="q" placeholder="{{ _('Search list...') }}" value="{{context.q}}"
           autocomplete="off" aria-label="{{ _('Search followee') }}">
       </div>
     </div>

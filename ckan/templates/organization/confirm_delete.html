@@ -13,7 +13,7 @@
           <form id="organization-confirm-delete-form" action="{{ h.url_for(group_type + '.delete', id=group_dict.id) }}" method="post">
             {{ h.csrf_input() }}
             <button class="btn btn-danger" type="submit" name="cancel" >{{ _('Cancel') }}</button>
-            <button class="btn btn-primary" type="submit" name="delete" >{{ _('Confirm Delete') }}</button>
+            <button class="btn btn-primary btn-primary-custom" type="submit" name="delete" >{{ _('Confirm Delete') }}</button>
           </form>
         </p>
       {% endblock %}

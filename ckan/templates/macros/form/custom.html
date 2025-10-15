@@ -38,9 +38,9 @@ error=''
 {% call input_block(label_id, label or name, error, classes, control_classes=["editor"], extra_html=extra_html, is_required=is_required) %}
 <div class="row">
     <div class="col-md-6">
-    <div class="input-group" {{ attributes(attrs) }}>
-        <label class="input-group-text">{{ _('Key') }}</label>
-        <input class="form-control" id="{{ id or names[0] }}-key" type="text" name="{{ names[0] }}" value="{{ values[0] | empty_and_escape }}" placeholder="{{ placeholders[0] }}" />
+    <div class="input-group input-group-custom" {{ attributes(attrs) }}>
+        <label class="input-group-text-custom">{{ _('Key') }}</label>
+        <input class="form-control form-control-custom" id="{{ id or names[0] }}-key" type="text" name="{{ names[0] }}" value="{{ values[0] | empty_and_escape }}" placeholder="{{ placeholders[0] }}" />
     </div>
     </div>
     <div class="col-md-6 d-flex flex-row-reverse">
@@ -50,9 +50,9 @@ error=''
         <span class="btn btn-danger"><span class="fa fa-trash"></span><span class="sr-only">{{ _('Remove') }}</span></span>
     </label>
     {% endif %}
-    <div class="input-group" {{ attributes(attrs) }}>
-        <label for="{{ id or names[1] }}-value" class="input-group-text">{{ _('Value') }}</label>
-        <input class="form-control" id="{{ id or names[1] }}-value" type="text" name="{{ names[1] }}" value="{{ values[1] | empty_and_escape }}" placeholder="{{ placeholders[1] }}" />
+    <div class="input-group input-group-custom" {{ attributes(attrs) }}>
+        <label for="{{ id or names[1] }}-value" class="input-group-text-custom">{{ _('Value') }}</label>
+        <input class="form-control form-control-custom" id="{{ id or names[1] }}-value" type="text" name="{{ names[1] }}" value="{{ values[1] | empty_and_escape }}" placeholder="{{ placeholders[1] }}" />
     </div>
     </div>
 </div>
