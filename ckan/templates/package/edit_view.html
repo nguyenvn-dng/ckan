@@ -17,9 +17,9 @@
     {{ h.csrf_input() }}
     {% include 'package/snippets/view_form.html' %}
     <div class="form-actions">
-      <button class="btn btn-danger pull-left" name="delete" value="Delete"> {{ _('Delete') }} </button>
+      <button class="btn btn-danger pull-left" name="delete" value="Delete"><i class="fa fa-trash"></i> {{ _('Delete') }} </button>
       <button class="btn btn-default btn-default-custome {% if not h.resource_view_display_preview(data) %}hide{%endif%}" name="preview" value="True" type="submit">{{ _('Preview') }}</button>
-      <button class="btn btn-primary btn-primary-custom" name="save" value="Save" type="submit">{{ _('Update') }}</button>
+      <button class="btn btn-primary btn-primary-custom" name="save" value="Save" type="submit"><i class="fa fa-check"></i> {{ _('Update') }}</button>
     </div>
   </form>
 {% endblock %}
