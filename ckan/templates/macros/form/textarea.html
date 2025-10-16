@@ -20,7 +20,7 @@ Examples:
 {{ form.textarea('desc', id='field-description', label=_('Description'), value=data.desc, error=errors.desc) }}
 
 #}
-{% macro textarea(name, id='', label='', value='', placeholder='', error="", classes=[], attrs={'class': 'form-control'}, is_required=false, rows=5, cols=20) %}
+{% macro textarea(name, id='', label='', value='', placeholder='', error="", classes=[], attrs={'class': 'form-control form-control-custom'}, is_required=false, rows=5, cols=20) %}
 {% set classes = (classes|list) %}
 {% do classes.append('control-full') %}
 

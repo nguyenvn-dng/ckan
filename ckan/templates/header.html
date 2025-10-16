@@ -30,12 +30,12 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    gap: 30px;
+    gap: 10px;
   }
 
   .account-search {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: 10px;
   }
@@ -56,6 +56,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .navbar-left-custom,
+  .navbar-right-custom {
+    flex: 0 0 20%;
   }
 
   a:hover {
@@ -167,10 +172,10 @@
 
 <header class="main-header">
   <div class="main-container">
-    {% block header_debug %} {% if g.debug and not g.debug_supress_header %}
+    <!-- {% block header_debug %} {% if g.debug and not g.debug_supress_header %}
     <div class="debug">Blueprint : {{ g.blueprint }}<br />View : {{ g.view }}</div>
-    {% endif %} {% endblock %}
-    <nav class="navbar navbar-expand-lg navbar-light">
+    {% endif %} {% endblock %} -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-left-custom">
       <hgroup class="{{ g.header_class }} navbar-left">
 
         {% block header_logo %}
@@ -221,27 +226,27 @@
               fill="#0386F6" />
           </svg>
 
-          <span style="font-size: 1.3rem; font-weight: 500;">
+          <span style="font-size: 1.3rem; font-weight: 600;">
             IOC
           </span>
 
         </a>
 
-        {% else %}
+        <!-- {% else %}
         <h1>
           <a href="{{ h.url_for('home.index') }}">{{ g.site_title }}</a>
         </h1>
         {% if g.site_description %}
         <h2>{{ g.site_description }}</h2>
-        {% endif %}
+        {% endif %} -->
         {% endif %}
         {% endblock %}
 
       </hgroup>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation-toggle"
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation-toggle"
         aria-controls="main-navigation-toggle" aria-expanded="false" aria-label="{{ _('Toggle navigation') }}">
         <span class="fa fa-bars text-white"></span>
-      </button>
+      </button> -->
     </nav>
     <div class="main-nav">
       <!-- <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -265,11 +270,24 @@
         <li class="nav-item-custom">
           <a class="nav-link {% if request.path.startswith('/dataset') %}active{% endif %}"
             href="{{ h.url_for('dataset.search') }}">
+
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M4 3.75C3.9337 3.75 3.87011 3.77634 3.82322 3.82322C3.77634 3.87011 3.75 3.9337 3.75 4V12.25H20.25V4C20.25 3.93369 20.2237 3.87011 20.1768 3.82322C20.1299 3.77634 20.0663 3.75 20 3.75H4ZM21.75 4C21.75 3.53587 21.5656 3.09075 21.2374 2.76256C20.9092 2.43437 20.4641 2.25 20 2.25H4C3.53587 2.25 3.09075 2.43437 2.76256 2.76256C2.43437 3.09075 2.25 3.53587 2.25 4V16C2.25 16.4641 2.43437 16.9092 2.76256 17.2374C3.09075 17.5656 3.53587 17.75 4 17.75H9.15041L8.83791 20.25H8C7.58579 20.25 7.25 20.5858 7.25 21C7.25 21.4142 7.58579 21.75 8 21.75H9.49C9.49731 21.7501 9.50461 21.7501 9.51188 21.75H14.4881C14.4954 21.7501 14.5027 21.7501 14.51 21.75H16C16.4142 21.75 16.75 21.4142 16.75 21C16.75 20.5858 16.4142 20.25 16 20.25H15.1621L14.8496 17.75H20C20.4641 17.75 20.9092 17.5656 21.2374 17.2374C21.5656 16.9092 21.75 16.4641 21.75 16V4ZM20.25 13.75H3.75V16C3.75 16.0663 3.77634 16.1299 3.82322 16.1768C3.87011 16.2237 3.93369 16.25 4 16.25H9.98817C9.99541 16.2499 10.0027 16.2499 10.0099 16.25H13.9901C13.9973 16.2499 14.0046 16.2499 14.0118 16.25H20C20.0663 16.25 20.1299 16.2237 20.1768 16.1768C20.2237 16.1299 20.25 16.0663 20.25 16V13.75ZM13.3379 17.75H10.6621L10.3496 20.25H13.6504L13.3379 17.75Z"
-                fill="#282A2B" />
+              <path
+                d="M3 17C3 16.4696 3.21071 15.9609 3.58579 15.5858C3.96086 15.2107 4.46957 15 5 15H7C7.53043 15 8.03914 15.2107 8.41421 15.5858C8.78929 15.9609 9 16.4696 9 17V19C9 19.5304 8.78929 20.0391 8.41421 20.4142C8.03914 20.7893 7.53043 21 7 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V17Z"
+                stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M15 17C15 16.4696 15.2107 15.9609 15.5858 15.5858C15.9609 15.2107 16.4696 15 17 15H19C19.5304 15 20.0391 15.2107 20.4142 15.5858C20.7893 15.9609 21 16.4696 21 17V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H17C16.4696 21 15.9609 20.7893 15.5858 20.4142C15.2107 20.0391 15 19.5304 15 19V17Z"
+                stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M9 5C9 4.46957 9.21071 3.96086 9.58579 3.58579C9.96086 3.21071 10.4696 3 11 3H13C13.5304 3 14.0391 3.21071 14.4142 3.58579C14.7893 3.96086 15 4.46957 15 5V7C15 7.53043 14.7893 8.03914 14.4142 8.41421C14.0391 8.78929 13.5304 9 13 9H11C10.4696 9 9.96086 8.78929 9.58579 8.41421C9.21071 8.03914 9 7.53043 9 7V5Z"
+                stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M6 15V14C6 13.4696 6.21071 12.9609 6.58579 12.5858C6.96086 12.2107 7.46957 12 8 12H16C16.5304 12 17.0391 12.2107 17.4142 12.5858C17.7893 12.9609 18 13.4696 18 14V15"
+                stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12 9V12" stroke="black" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
+
+
             <span>Bộ dữ liệu</span></a>
         </li>
         <li class="nav-item-custom">
@@ -305,16 +323,27 @@
             <span>Yêu cầu dữ liệu</span>
           </a>
         </li>
+        <li class="nav-item-custom">
+          <a class="nav-link {% if request.path.startswith('/report') %}active{% endif %}" href="https://lookerstudio.google.com/u/0/reporting/2b3b1869-a7af-41ba-8cfe-08f516fd9dfc/page/kIV1C
+">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4 3.75C3.9337 3.75 3.87011 3.77634 3.82322 3.82322C3.77634 3.87011 3.75 3.9337 3.75 4V12.25H20.25V4C20.25 3.93369 20.2237 3.87011 20.1768 3.82322C20.1299 3.77634 20.0663 3.75 20 3.75H4ZM21.75 4C21.75 3.53587 21.5656 3.09075 21.2374 2.76256C20.9092 2.43437 20.4641 2.25 20 2.25H4C3.53587 2.25 3.09075 2.43437 2.76256 2.76256C2.43437 3.09075 2.25 3.53587 2.25 4V16C2.25 16.4641 2.43437 16.9092 2.76256 17.2374C3.09075 17.5656 3.53587 17.75 4 17.75H9.15041L8.83791 20.25H8C7.58579 20.25 7.25 20.5858 7.25 21C7.25 21.4142 7.58579 21.75 8 21.75H9.49C9.49731 21.7501 9.50461 21.7501 9.51188 21.75H14.4881C14.4954 21.7501 14.5027 21.7501 14.51 21.75H16C16.4142 21.75 16.75 21.4142 16.75 21C16.75 20.5858 16.4142 20.25 16 20.25H15.1621L14.8496 17.75H20C20.4641 17.75 20.9092 17.5656 21.2374 17.2374C21.5656 16.9092 21.75 16.4641 21.75 16V4ZM20.25 13.75H3.75V16C3.75 16.0663 3.77634 16.1299 3.82322 16.1768C3.87011 16.2237 3.93369 16.25 4 16.25H9.98817C9.99541 16.2499 10.0027 16.2499 10.0099 16.25H13.9901C13.9973 16.2499 14.0046 16.2499 14.0118 16.25H20C20.0663 16.25 20.1299 16.2237 20.1768 16.1768C20.2237 16.1299 20.25 16.0663 20.25 16V13.75ZM13.3379 17.75H10.6621L10.3496 20.25H13.6504L13.3379 17.75Z"
+                fill="#282A2B" />
+            </svg>
+            <span>Báo cáo thống kê</span>
+          </a>
+        </li>
       </ul>
     </div>
-    <div class="account-search">
+    <div class="account-search navbar-right-custom">
       {% block header_account_container_content %}
       {% block header_site_search %}
       <form class="d-flex site-search" action="{% url_for dataset_type ~ '.search' %}" method="get">
         <label class="d-none" for="field-sitewide-search">{% block header_site_search_label %}{{
           h.humanize_entity_type('package', dataset_type, 'search_placeholder') or _('Search Datasets...') }}{%
           endblock %}</label>
-        <input id="field-sitewide-search" class="form-control me-2" type="text" name="q"
+        <input id="field-sitewide-search" class="form-control form-control-custom me-2" type="text" name="q"
           placeholder="{{ _('Tìm kiếm') }}"
           aria-label="{{ h.humanize_entity_type('package', dataset_type, 'search_placeholder') or _('Tìm kiếm...') }}" />
         <!-- <button class="btn" type="submit" aria-label="{{ _('Submit') }}"><i class="fa fa-search"></i></button> -->

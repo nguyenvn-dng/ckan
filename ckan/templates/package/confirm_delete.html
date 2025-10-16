@@ -13,8 +13,8 @@
         <p class="form-actions">
           <form id='confirm-dataset-delete-form' action="{% url_for pkg_dict.type ~ '.delete', id=pkg_dict.name %}" method="post">
             {{ h.csrf_input() }}
-            <button class="btn btn-danger" type="submit" name="cancel" >{{ _('Cancel') }}</button>
-            <button class="btn btn-primary" type="submit" name="delete" >{{ _('Confirm Delete') }}</button>
+            <button class="btn btn-danger" type="submit" name="cancel" ><i class="fa fa-times"></i> {{ _('Cancel') }}</button>
+            <button class="btn btn-primary btn-primary-custom" type="submit" name="delete" ><i class="fa fa-check"></i> {{ _('Confirm Delete') }}</button>
           </form>
         </p>
       {% endblock %}

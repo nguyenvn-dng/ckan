@@ -120,6 +120,122 @@
     border-right: 1px solid #E2E8F0;
   }
 
+  .form-control-custom {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.8 !important;
+  color: #333333;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  appearance: none;
+  border-radius: 8px !important;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control-custom:focus {
+  color: #333333;
+  background-color: #fff;
+  border-color: #0070ce !important;
+  outline: 0;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 0 0.1rem rgba(32, 107, 130, 0.25) !important;
+}
+
+.form-control-plaintext-custom {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0;
+  margin-bottom: 0;
+  line-height: 1.8;
+  color: #333333;
+  background-color: transparent;
+  border: solid transparent;
+  border-width: 1px 0;
+}
+
+.input-group-custom {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap !important;
+  align-items: stretch;
+  width: 100%;
+}
+
+.input-group-text-custom {
+  display: flex;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #333333;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+}
+
+.input-group-custom:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu),
+.input-group-custom:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3) {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.input-group-custom.has-validation > :nth-last-child(n+3):not(.dropdown-toggle):not(.dropdown-menu),
+.input-group-custom.has-validation > .dropdown-toggle:nth-last-child(n+4) {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.input-group-custom > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: -1px;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.btn-primary-custom {
+  color: #fff;
+  background-color: #0070ce !important;
+  border-color: #0070ce !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.btn-primary-custom:hover {
+  color: #fff;
+  background-color: #0365b6 !important;
+  border-color: #0365b6 !important;
+}
+.btn-check:focus + .btn-primary-custom, .btn-primary-custom:focus {
+  color: #fff;
+  background-color: #0365b6 !important;
+  border-color: #0365b6 !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.25rem #54abf3 !important;
+}
+.btn-check:checked + .btn-primary-custom, .btn-check:active + .btn-primary-custom, .btn-primary-custom:active, .btn-primary-custom.active, .show > .btn-primary-custom.dropdown-toggle {
+  color: #fff;
+  background-color: #0365b6 !important;
+  border-color: #0365b6 !important;
+}
+.btn-check:checked + .btn-primary-custom:focus, .btn-check:active + .btn-primary-custom:focus, .btn-primary-custom:active:focus, .btn-primary-custom.active:focus, .show > .btn-primary-custom.dropdown-toggle:focus {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125), 0 0 0 0.25rem #54abf3 !important;
+}
+.btn-primary-custom:disabled, .btn-primary-custom.disabled {
+  color: #fff;
+  background-color: #0070ce !important;
+  border-color: #0070ce !important;
+}
+.btn-default-custome {
+  color: #0070ce !important;
+  border: 1px solid #0070ce !important;
+}
+
+.btn-default.btn-default-custome:hover {
+    color: #0070ce !important;
+    background-color: #f1f2f3 !important;
+  }
+
 </style>
 {% endblock %} {%- block page -%} {% block skip %}
 <div class="visually-hidden-focusable">
