@@ -1145,6 +1145,9 @@ msgid ""
 "the resource to the right and place it to the desired location on the list. "
 "When you are done, click the \"Save order\" -button."
 msgstr ""
+"Bạn có thể sắp xếp lại các tài nguyên bằng cách kéo chúng bằng biểu tượng "
+"mũi tên. Kéo tài nguyên sang phải và đặt nó vào vị trí mong muốn trong danh "
+"sách. Khi hoàn tất, nhấp vào nút \"Lưu\"."
 
 #: ckan/public/base/javascript/modules/resource-reorder.js:64
 #: ckan/public/base/javascript/modules/resource-view-reorder.js:54
