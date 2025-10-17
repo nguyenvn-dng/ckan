@@ -10,7 +10,7 @@ this.ckan.module('resource-reorder', function($) {
       title: '<h1></h1>',
       help_text: '<p></p>',
       button: [
-        '<a href="javascript:;" class="btn btn-default">',
+        '<a href="javascript:;" class="btn btn-default btn-default-custom">',
         '<i class="fa fa-bars"></i>',
         '<span></span>',
         '</a>'
@@ -62,7 +62,7 @@ this.ckan.module('resource-reorder', function($) {
         .insertAfter(this.el);
       $('.save', this.html_form_actions)
         .text(this._('Save order'))
-        .on('click', this._onHandleSave);
+        .on('click', this._onHandleSave).addClass('btn-primary-custom');
       $('.cancel', this.html_form_actions)
         .text(this._('Cancel'))
         .on('click', this._onHandleCancel);

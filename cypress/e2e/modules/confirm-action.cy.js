@@ -73,7 +73,7 @@ describe('ckan.module.ConfirmActionModule()', {testIsolation: false}, function (
 
         // Not an ideal check as this implementation could be done in many ways.
         expect(target).to.be.calledTwice;
-        expect(target).to.be.calledWith('click', '.btn-primary', this.module._onConfirmSuccess);
+        expect(target).to.be.calledWith('click', '.btn-primary btn-primary-custom', this.module._onConfirmSuccess);
         expect(target).to.be.calledWith('click', '.btn-cancel', this.module._onConfirmCancel);
 
         target.restore();
