@@ -1248,7 +1248,7 @@ msgstr "Bảng điều khiển"
 #: ckan/templates/header.html:35 ckan/templates/header.html:37
 #: ckan/templates/user/dashboard.html:20
 msgid "Profile settings"
-msgstr ""
+msgstr "Cài đặt hồ sơ"
 
 #: ckan/templates/header.html:44
 msgid "Log out"
@@ -2487,7 +2487,7 @@ msgstr "Giấy phép"
 
 #: ckan/templates/package/resource_views.html:11
 msgid "New view"
-msgstr ""
+msgstr "Thông tin mới"
 
 #: ckan/templates/package/resource_views.html:29
 msgid "This resource has no views"
@@ -3620,7 +3620,7 @@ msgstr ""
 
 #: ckan/views/group.py:625
 msgid "members"
-msgstr ""
+msgstr "thành viên"
 
 #: ckan/views/group.py:651 ckan/views/group.py:670
 #, python-format
@@ -5512,4 +5512,8 @@ msgstr ""
 #: ckanext/webpageview/theme/templates/webpage_form.html:3
 msgid "eg. http://example.com  (if blank uses resource url)"
 msgstr ""
+
+#: ckan/templates/package/snippets/resources_list.html
+msgid "why not add some"
+msgstr "tại sao không thêm dữ liệu"
 

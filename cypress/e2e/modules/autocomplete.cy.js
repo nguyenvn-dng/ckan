@@ -232,7 +232,7 @@ describe('ckan.modules.AutocompleteModule()', {testIsolation: false}, function (
   describe('.formatNoMatches(term)', {testIsolation: false}, function () {
     it('should return the no matches string if there is a term', function () {
       var target = this.module.formatNoMatches('term');
-      assert.equal(target, 'No matches found');
+      assert.equal(target, this._('No matches found'));
     });
 
     it('should return the empty string if there is no term', function () {
