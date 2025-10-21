@@ -5462,7 +5462,7 @@ msgid ""
 "<b>No fields defined:</b> click the Data Dictionary button above to "
 "customize this table"
 msgstr ""
-<b>Không có trường nào được xác định:</b> nhấp vào nút Từ điển dữ liệu ở trên để "
+"<b>Không có trường nào được xác định:</b> nhấp vào nút Từ điển dữ liệu ở trên để "
 "tùy chỉnh bảng này"
 
 #: ckanext/tabledesigner/templates/package/resource_read.html:18
