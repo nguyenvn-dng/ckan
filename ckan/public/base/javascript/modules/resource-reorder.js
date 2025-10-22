@@ -17,7 +17,7 @@ this.ckan.module('resource-reorder', function($) {
       ].join('\n'),
       form_actions: [
         '<div class="form-actions">',
-        '<a href="javascript:;" class="save btn btn-primary"></a>',
+        '<a href="javascript:;" class="save btn btn-primary btn-primary-custom"></a>',
         '</div>'
       ].join('\n'),
       handle: [
