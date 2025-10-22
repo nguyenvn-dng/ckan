@@ -14,7 +14,7 @@
           <option value="{{ option[0] }}"> {{ option[1] }}</option>
         {% endfor %}
       </select>
-      <button type="submit" class="btn btn-primary btn-primary-custom" aria-label="{{ _('Associate this group with this dataset') }}">{{ h.humanize_entity_type('group', default_group_type, 'add association link') or _('Add to group') }}</button>
+      <button style="margin-top: 1.5rem;" type="submit" class="btn btn-primary btn-primary-custom" aria-label="{{ _('Associate this group with this dataset') }}"><i class="fa fa-plus"></i>{{ h.humanize_entity_type('group', default_group_type, 'add association link') or _('Add to group') }}</button>
     </form>
   {% endif %}
 
