@@ -86,6 +86,10 @@
     background-color: #e5ebf3;
   }
 
+  .nav-link:focus {
+    color: #000000 !important;
+  }
+
   .nav-item-custom {
     display: flex;
     align-items: center;
@@ -143,6 +147,10 @@
 
   .user-menu.active .user-dropdown {
     display: block;
+  }
+
+  .dropdown-item:active {
+    background-color: #0070ce !important;
   }
 </style>
 {% endblock %}
@@ -324,7 +332,7 @@
           </a>
         </li>
         <li class="nav-item-custom">
-          <a class="nav-link {% if request.path.startswith('/report') %}active{% endif %}" href="https://lookerstudio.google.com/u/0/reporting/2b3b1869-a7af-41ba-8cfe-08f516fd9dfc/page/kIV1C
+          <a class="nav-link {% if request.path.startswith('/report') %}active{% endif %}" target="_blank" href="https://lookerstudio.google.com/u/0/reporting/2b3b1869-a7af-41ba-8cfe-08f516fd9dfc/page/kIV1C
 ">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"

@@ -2136,9 +2136,9 @@ the specific language governing permissions and limitations under the Apache Lic
 
         createContainer: function () {
             var container = $(document.createElement("div")).attr({
-                "class": "select2-container"
+                "class": "select2-container select2-container-custome"
             }).html([
-                "<a href='javascript:void(0)' class='select2-choice' tabindex='-1'>",
+                "<a href='javascript:void(0)' class='select2-choice select2-choice-custom' tabindex='-1'>",
                 "   <span class='select2-chosen'>&#160;</span><abbr class='select2-search-choice-close'></abbr>",
                 "   <span class='select2-arrow' role='presentation'><b role='presentation'></b></span>",
                 "</a>",
@@ -2774,9 +2774,9 @@ the specific language governing permissions and limitations under the Apache Lic
         // multi
         createContainer: function () {
             var container = $(document.createElement("div")).attr({
-                "class": "select2-container select2-container-multi"
+                "class": "select2-container select2-container-multi select2-container-custome"
             }).html([
-                "<ul class='select2-choices'>",
+                "<ul class='select2-choices select2-choices-custom'>",
                 "  <li class='select2-search-field'>",
                 "    <label for='' class='select2-offscreen'></label>",
                 "    <input type='text' autocomplete='off' autocorrect='off' autocapitalize='off' spellcheck='false' class='select2-input'>",
