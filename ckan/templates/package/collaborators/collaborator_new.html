@@ -6,7 +6,7 @@
 
 {% block primary_content_inner %}
   {% link_for _('Back to all collaborators'), named_route='dataset.collaborators_read', id=pkg_dict.name, class_='btn btn-default btn-default-custome pull-right', icon='arrow-left' %}
-  <h1 class="page-heading">
+  <h1 class="page-heading" style="margin-top: 1.5rem !important">
     {% block page_heading %}{{ _('Edit Collaborator') if user else _('Add Collaborator') }}{% endblock %}
   </h1>
   {% block form %}

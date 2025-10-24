@@ -6,7 +6,7 @@
 
 {% block primary_content_inner %}
   {% link_for _('Back to all members'), named_route=group_type+'.manage_members', id=group.name, class_='btn btn-default btn-default-custome pull-right', icon='arrow-left' %}
-  <h1 class="page-heading" style="margin-top: 1.5rem">
+  <h1 class="page-heading" style="margin-top: 1.5rem !important">
     {% block page_heading %}{{ _('Edit Member') if user else _('Add Member') }}{% endblock %}
   </h1>
   {% block form %}
