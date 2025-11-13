@@ -11719,6 +11719,7 @@ select[data-module=autocomplete] {
 
 .resource-view {
   margin-top: 20px;
+  position: relative
 }
 
 #activity-archive-notice {
@@ -11953,7 +11954,7 @@ td.diff_header {
 .actions {
   margin: 0;
   list-style: none;
-  position: absolute;
+  position: relative;
   top: 10px;
   right: 10px;
   z-index: 1;
