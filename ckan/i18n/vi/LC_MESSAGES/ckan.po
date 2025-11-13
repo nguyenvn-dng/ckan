@@ -2748,7 +2748,7 @@ msgstr ""
 
 #: ckan/templates/package/snippets/package_form.html:42
 msgid "Are you sure you want to delete this dataset?"
-msgstr "Bạn có chắc muốn xóa bộ dữ liệu này??"
+msgstr "Bạn có chắc muốn xóa bộ dữ liệu này?"
 
 #: ckan/templates/package/snippets/package_form.html:46
 msgid "Next: Add Data"
