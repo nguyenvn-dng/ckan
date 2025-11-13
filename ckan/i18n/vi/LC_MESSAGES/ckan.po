@@ -1052,7 +1052,7 @@ msgstr "Xác nhận hành động"
 
 #: ckan/public/base/javascript/modules/confirm-action.js:129
 msgid "Are you sure you want to perform this action?"
-msgstr "Bạn chắc chắn muốn thực hiện hoạt động này"
+msgstr "Bạn chắc chắn muốn thực hiện hành động này"
 
 #: ckan/public/base/javascript/modules/confirm-action.js:131
 #: ckan/templates/user/new_user_form.html:14
@@ -2748,7 +2748,7 @@ msgstr ""
 
 #: ckan/templates/package/snippets/package_form.html:42
 msgid "Are you sure you want to delete this dataset?"
-msgstr "Bạn có chắc muốn xóa bộ dữ liệu này?"
+msgstr "Bạn có chắc muốn xóa bộ dữ liệu này??"
 
 #: ckan/templates/package/snippets/package_form.html:46
 msgid "Next: Add Data"
