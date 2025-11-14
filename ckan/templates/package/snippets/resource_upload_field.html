@@ -39,7 +39,7 @@ placeholder - placeholder text for url field
     'checked' if not data.url and not data.url_type else '' }}>
   <div class="select-type">
     <label id="resource-menu-label" class="form-label"
-      >{{ menu_label or _('Data') }}</label>
+      ><span class="control-required">*</span> {{ menu_label or _('Data') }}</label>
     <div role="group" aria-labelledby="resource-menu-label">
       {% block url_type_select %}
         {% if is_upload_enabled %}
