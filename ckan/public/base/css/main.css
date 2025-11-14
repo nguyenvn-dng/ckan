@@ -12737,6 +12737,8 @@ td.diff_header {
 
 .resource-view .actions {
   right: 0;
+  top: 15px;
+  position: absolute;
 }
 
 .resource-view-filters {
