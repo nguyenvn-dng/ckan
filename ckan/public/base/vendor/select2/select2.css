@@ -479,6 +479,7 @@ disabled look for disabled choices in the results dropdown
 /* multiselect */
 
 .select2-container-multi .select2-choices {
+    display: flex;
     height: auto !important;
     height: 1%;
     margin: 0;
@@ -552,6 +553,9 @@ html[dir="rtl"] .select2-container-multi .select2-choices li
 }
 
 .select2-container-multi .select2-choices .select2-search-choice {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     padding: 3px 5px 3px 18px;
     margin: 3px 0 3px 5px;
     position: relative;
@@ -597,10 +601,6 @@ html[dir="rtl"] .select2-container-multi .select2-choices .select2-search-choice
     display: block;
     width: 12px;
     height: 13px;
-    position: absolute;
-    right: 3px;
-    top: 4px;
-
     font-size: 1px;
     outline: none;
     background: url('select2.png') right top no-repeat;
