@@ -186,17 +186,10 @@ html[dir="rtl"] .select2-container .select2-choice > .select2-chosen {
     position: absolute;
     right: 0;
     top: 0;
-
     border-radius: 0 4px 4px 0;
-
     background-clip: padding-box;
-
     background: transparent;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ccc), color-stop(0.6, #eee));
-    background-image: -webkit-linear-gradient(center bottom, #ccc 0%, #eee 60%);
-    background-image: -moz-linear-gradient(center bottom, #ccc 0%, #eee 60%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#eeeeee', endColorstr = '#cccccc', GradientType = 0);
-    background-image: linear-gradient(to top, #ccc 0%, #eee 60%);
 }
 
 html[dir="rtl"] .select2-container .select2-choice .select2-arrow {

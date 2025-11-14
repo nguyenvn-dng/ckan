@@ -2579,7 +2579,7 @@ the specific language governing permissions and limitations under the Apache Lic
                 if (equal(self.id(elm.data("select2-data")), self.opts.element.val())) {
                     selected = i;
                     // Add select2-custom-selected class to the selected option in single select
-                    elm.addClass("select2-selected select2-custom-selected");
+                    elm.addClass("select2-custom-selected");
                     return false;
                 }
             });
@@ -3338,9 +3338,9 @@ the specific language governing permissions and limitations under the Apache Lic
             choices.each2(function (i, choice) {
                 var id = self.id(choice.data("select2-data"));
                 if (indexOf(id, val) >= 0) {
-                    choice.addClass("select2-selected select2-custom-selected");
+                    choice.addClass("select2-selected");
                     // mark all children of the selected parent as selected
-                    choice.find(".select2-result-selectable").addClass("select2-selected select2-custom-selected");
+                    choice.find(".select2-result-selectable").addClass("select2-selected");
                 }
             });
 
@@ -3348,7 +3348,7 @@ the specific language governing permissions and limitations under the Apache Lic
                 // hide an optgroup if it doesn't have any selectable children
                 if (!choice.is('.select2-result-selectable')
                     && choice.find(".select2-result-selectable:not(.select2-selected)").length === 0) {
-                    choice.addClass("select2-selected select2-custom-selected");
+                    choice.addClass("select2-selected");
                 }
             });
 
