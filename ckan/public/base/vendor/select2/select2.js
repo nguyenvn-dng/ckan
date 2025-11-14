@@ -2578,6 +2578,8 @@ the specific language governing permissions and limitations under the Apache Lic
             this.findHighlightableChoices().each2(function (i, elm) {
                 if (equal(self.id(elm.data("select2-data")), self.opts.element.val())) {
                     selected = i;
+                    // Add select2-custom-selected class to the selected option in single select
+                    elm.addClass("select2-selected select2-custom-selected");
                     return false;
                 }
             });
