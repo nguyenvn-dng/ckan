@@ -84,7 +84,7 @@ placeholder - placeholder text for url field
           {% endif %}
           <div class="upload-type">
             {{ remove_button(
-              js="$('#field-resource-upload').replaceWith($('#field-resource-upload').val('').clone(true))") }}
+              js="var input = document.getElementById('field-resource-upload'); if(input) { input.value = ''; var wrapper = document.getElementById('field-resource-upload-wrapper'); if(wrapper) { var display = wrapper.querySelector('.file-name-display'); if(display) { display.textContent = display.getAttribute('data-no-file-text') || 'No file chosen'; display.classList.remove('has-file'); } } }") }}
             {{ form.input(
               'upload',
               label=upload_label or _('File'),

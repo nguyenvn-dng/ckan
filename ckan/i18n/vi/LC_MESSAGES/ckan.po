@@ -2,10 +2,10 @@
 # Copyright (C) 2024 ORGANIZATION
 # This file is distributed under the same license as the ckan project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
-# 
+#
 # Translators:
 # Adrià Mercader <amercadero@gmail.com>, 2024
-# 
+#
 
 msgid ""
 msgstr ""
@@ -1666,7 +1666,7 @@ msgstr "Bạn có muốn xóa tên thành viên nhóm không - {name}?"
 #: ckan/templates/package/read_base.html:17 ckan/templates/user/edit.html:8
 #: ckan/templates/user/edit_base.html:3 ckan/templates/user/read_base.html:17
 msgid "Manage"
-msgstr "Quản lí"
+msgstr "Chỉnh Sửa"
 
 #: ckan/templates/group/edit.html:12
 msgid "Edit Group"
@@ -5635,3 +5635,19 @@ msgstr "ví dụ: http://example.com (nếu khoảng trống sử dụng url tà
 msgid "why not add some"
 msgstr "tại sao không thêm dữ liệu"
 
+#: ckan/templates/macros/form/input.html
+msgid "Choose file"
+msgstr "Chọn file"
+
+#: ckan/templates/macros/form/input.html
+msgid "No file chosen"
+msgstr "Không có file nào được chọn"
+
+msgid "Datastore active"
+msgstr "Kho dữ liệu đang hoạt động"
+
+msgid "False"
+msgstr "Không"
+
+msgid "False"
+msgstr "Có"

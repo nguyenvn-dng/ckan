@@ -24,7 +24,96 @@ Examples:
 {% macro input(name, id='', label='', value='', placeholder='', type='text', error="", classes=[], attrs={'class': 'form-control form-control-custom'}, is_required=false) %}
 {%- set extra_html = caller() if caller -%}
 
-{% call input_block(id or name, label or name, error, classes, extra_html=extra_html, is_required=is_required) %} 
+{% call input_block(id or name, label or name, error, classes, extra_html=extra_html, is_required=is_required) %}
+{% if type == 'file' %}
+<style>
+  .file-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+  }
+
+  .btn-file-custom {
+    top: 0 !important;
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #333333;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .btn-file-custom:hover {
+    background-color: #f8f9fa;
+    border-color: #adb5bd;
+  }
+
+  .btn-file-custom:focus {
+    color: #333333;
+    background-color: #fff;
+    border-color: #90b5c1;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(32, 107, 130, 0.25);
+  }
+
+  .btn-file-custom:active {
+    background-color: #e9ecef;
+    border-color: #90b5c1;
+  }
+
+  .file-name-display {
+    color: #6c757d;
+    font-style: italic;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0.375rem 0.75rem;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+
+  .file-name-display.has-file {
+    color: #333333;
+    font-style: normal;
+    background-color: #fff;
+  }
+</style>
+<div class="file-input-wrapper" id="{{ id or name }}-wrapper">
+  <input id="{{ id or name }}" type="{{ type }}" name="{{ name }}" value="{{ value | empty_and_escape }}" placeholder="{{ placeholder }}" {{ attributes(attrs) }} class="form-control form-control-custom" style="display: none;">
+  <button type="button" class="btn btn-default btn-file-custom" onclick="document.getElementById('{{id or name}}').click();">
+    {{ _('Choose file') }}
+  </button>
+  <span class="file-name-display">{{ _('No file chosen') }}</span>
+</div>
+<script>
+(function() {
+  var input = document.getElementById('{{ id or name }}');
+  var display = input.parentElement.querySelector('.file-name-display');
+  var noFileText = '{{ _("No file chosen") }}';
+  input.addEventListener('change', function() {
+    if (this.files && this.files.length > 0) {
+      display.textContent = this.files[0].name;
+      display.classList.add('has-file');
+    } else {
+      display.textContent = noFileText;
+      display.classList.remove('has-file');
+    }
+  });
+})();
+</script>
+{% else %}
 <input id="{{ id or name }}" type="{{ type }}" name="{{ name }}" value="{{ value | empty_and_escape }}" placeholder="{{ placeholder }}" {{ attributes(attrs) }} />
-{% endcall %} 
+{% endif %}
+{% endcall %}
 {% endmacro %}
