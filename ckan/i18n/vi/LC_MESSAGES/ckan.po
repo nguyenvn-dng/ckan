@@ -2091,7 +2091,7 @@ msgstr "http://example.com/my-image.jpg"
 
 #: ckan/templates/macros/form/image_upload.html:16
 msgid "Image URL"
-msgstr "hình ảnh URL"
+msgstr "URL hình ảnh"
 
 #: ckan/templates/macros/form/image_upload.html:52
 #: ckan/templates/package/snippets/resource_upload_field.html:77
