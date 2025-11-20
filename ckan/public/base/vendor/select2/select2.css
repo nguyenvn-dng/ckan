@@ -401,6 +401,12 @@ html[dir="rtl"] .select2-results {
     font-weight: 600;
 }
 
+.select2-results .select2-custom-selected.select2-selected {
+    background-color: var(--bs-gray-100);
+    font-weight: 600;
+    color: #000;
+}
+
 .select2-results li em {
     background: #feffde;
     font-style: normal;
