@@ -326,7 +326,7 @@ groups:
         default: 31_536_000 # 1 year
         description: |
           If :ref:`SESSION_PERMANENT` is enabled, the session’s expiration will be
-          set this number of seconds in the future. Note that you can not set a 
+          set this number of seconds in the future. Note that you can not set a
           session that never expires (only very far into the future).
 
       - key: SESSION_USE_SIGNER
@@ -1098,7 +1098,7 @@ groups:
           the theme, you can use your own.
 
       - key: ckan.favicon
-        default: /base/images/ckan.ico
+        default: /base/images/ioc-logo.svg
         example: http://okfn.org/wp-content/themes/okfn-master-wordpress-theme/images/favicon.ico
         description: This sets the site's `favicon`. This icon is usually displayed by the browser in the tab heading and bookmark.
 
